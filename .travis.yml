@@ -8,6 +8,6 @@ script:
 - bundle exec rspec
 deploy:
   provider: heroku
-  api_key:
-  app:
+  api_key: ENV['heroku_app_id']
+  app: zach-trokey-viewing-party
   run: rails db:migrate
