@@ -1,6 +1,6 @@
 language: ruby
 rbenv:
-- 2.5.3
+- 2.7.2
 addons:
   postgresql: 9.6
 script:
@@ -10,5 +10,5 @@ deploy:
   provider: heroku
   api_key:
     secure: VvowjqnvRcIU5YCRLoss0OfegvOQk9L93Ii+KFXVFAoYnYRQqKg5TKQmvwOrgp3S7IAQpGdo2owAPavbQwDAkgwXg8F9gKWEU7aFJPC+hagGzbXpqHkEHxpKtNfb7md2xU/0b+KuBQXsJsP2PATs2+x8FCgAOTeW2jgmji7r20/JUr1T1QJv0iy7UuLM4S6Fxf131rx2w+ARVjkt9YtRKV0vdejxQMoBqoREbI/CMrpLAyG9AUAcccnBFMsEoC/jLYE3x+Vc2OqF+3nmep+0hHl0CuK7x+zgxddydj9SGPDC9otR2tKVjRlFde1W16LRT8GV7CzcfXKLh778nmO2HBX487c7tXlrtMLekIsTnixO5W1zM4JGDx4ptD5qNiX3ljO7Zvwoc3QPtAx2tDPgscPBSxkMNLi5JdpbbYVdrPtEoOU+t7/fUmO43hCx7hIyerfm63uoeSfopL7RZ2PmytwKpvfBu0+CJ/BIeqKN7Gb5mY8bvm6kbh99wmeD0lK6jN4GHbyGPcXfYmhVSsv0UkgbtwpUAPqVccUXGyGgZ+YT6oWb02tIqXNSB05QPf2aU6dP6ejrAE4OXGjIA2JnhuDTUPBhX11qPglfNLXawISC7PM2SY+J1Uwr1YnDvkF0wXF3elLFEE23fkJMOw1hz2kVJeVUtCqGX2u9rKPIJLo=
-  app: 
+  app:
   run: rails db:migrate
