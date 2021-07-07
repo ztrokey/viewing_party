@@ -1,8 +1,8 @@
 require 'rails_helper'
 
 RSpec.describe "User registration form" do
-  it "successfully creates new user" do
-    visit new_user_path
+  it "creates new user" do
+    visit register_path
 
     username = 'Big Bacon Boie'
     email = 'chris_p_bacon@gmail.com'
