@@ -1,0 +1,11 @@
+<%= form_with model: @user do |f| %>
+  <%= f.label :user_name, 'User Name' %>
+  <%= f.text_field :user_name %>
+  <%= f.label :email, 'Email' %>
+  <%= f.text_field :email %>
+  <%= f.label :password, 'Password' %>
+  <%= f.password_field :password %>
+  <%= f.label :password_confirmation, 'Confirm Your Password' %>
+  <%= f.password_field :password_confirmation %>
+  <%= f.submit 'Register' %>
+<% end %>
