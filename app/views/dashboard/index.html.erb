@@ -1,0 +1,17 @@
+<h1>Welcome <%= @current_user.user_name %>!</h1>
+
+<%= button_to 'Discover Movies' %>
+
+<section id=friends>
+  <div>Friends:
+    <ul>
+      <% @current_user.friends.each do |friend| %>
+        <li><%= friend.user_name %></li>
+      <% end %>
+    </ul>
+  </div>
+</section>
+
+<section id=parties>
+  <div>Your Viewing Parties:</div>
+</section>
