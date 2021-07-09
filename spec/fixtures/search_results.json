@@ -1,0 +1,410 @@
+{
+  "page": 1,
+  "results": [
+      {
+          "adult": false,
+          "backdrop_path": "/cjRUhKyt2Jo3V1KNzc5tpPNfccG.jpg",
+          "genre_ids": [
+              878,
+              28,
+              12
+          ],
+          "id": 320288,
+          "original_language": "en",
+          "original_title": "Dark Phoenix",
+          "overview": "The X-Men face their most formidable and powerful foe when one of their own, Jean Grey, starts to spiral out of control. During a rescue mission in outer space, Jean is nearly killed when she's hit by a mysterious cosmic force. Once she returns home, this force not only makes her infinitely more powerful, but far more unstable. The X-Men must now band together to save her soul and battle aliens that want to use Grey's new abilities to rule the galaxy.",
+          "popularity": 122.745,
+          "poster_path": "/kZv92eTc0Gg3mKxqjjDAM73z9cy.jpg",
+          "release_date": "2019-06-05",
+          "title": "Dark Phoenix",
+          "video": false,
+          "vote_average": 6.1,
+          "vote_count": 4625
+      },
+      {
+          "adult": false,
+          "backdrop_path": "/a6cDxdwaQIFjSkXf7uskg78ZyTq.jpg",
+          "genre_ids": [
+              28,
+              12,
+              878
+          ],
+          "id": 290859,
+          "original_language": "en",
+          "original_title": "Terminator: Dark Fate",
+          "overview": "Decades after Sarah Connor prevented Judgment Day, a lethal new Terminator is sent to eliminate the future leader of the resistance. In a fight to save mankind, battle-hardened Sarah Connor teams up with an unexpected ally and an enhanced super soldier to stop the deadliest Terminator yet.",
+          "popularity": 206.597,
+          "poster_path": "/vqzNJRH4YyquRiWxCCOH0aXggHI.jpg",
+          "release_date": "2019-10-23",
+          "title": "Terminator: Dark Fate",
+          "video": false,
+          "vote_average": 6.5,
+          "vote_count": 3555
+      },
+      {
+          "adult": false,
+          "backdrop_path": "/nMKdUUepR0i5zn0y1T4CsSB5chy.jpg",
+          "genre_ids": [
+              18,
+              28,
+              80,
+              53
+          ],
+          "id": 155,
+          "original_language": "en",
+          "original_title": "The Dark Knight",
+          "overview": "Batman raises the stakes in his war on crime. With the help of Lt. Jim Gordon and District Attorney Harvey Dent, Batman sets out to dismantle the remaining criminal organizations that plague the streets. The partnership proves to be effective, but they soon find themselves prey to a reign of chaos unleashed by a rising criminal mastermind known to the terrified citizens of Gotham as the Joker.",
+          "popularity": 50.471,
+          "poster_path": "/qJ2tW6WMUDux911r6m7haRef0WH.jpg",
+          "release_date": "2008-07-16",
+          "title": "The Dark Knight",
+          "video": false,
+          "vote_average": 8.5,
+          "vote_count": 25369
+      },
+      {
+          "adult": false,
+          "backdrop_path": "/uhYoytlNaq46dG81wLmHqaSuzWu.jpg",
+          "genre_ids": [
+              28,
+              12,
+              14
+          ],
+          "id": 76338,
+          "original_language": "en",
+          "original_title": "Thor: The Dark World",
+          "overview": "Thor fights to restore order across the cosmos… but an ancient race led by the vengeful Malekith returns to plunge the universe back into darkness. Faced with an enemy that even Odin and Asgard cannot withstand, Thor must embark on his most perilous and personal journey yet, one that will reunite him with Jane Foster and force him to sacrifice everything to save us all.",
+          "popularity": 62.028,
+          "poster_path": "/wp6OxE4poJ4G7c0U2ZIXasTSMR7.jpg",
+          "release_date": "2013-10-30",
+          "title": "Thor: The Dark World",
+          "video": false,
+          "vote_average": 6.6,
+          "vote_count": 13581
+      },
+      {
+          "adult": false,
+          "backdrop_path": "/pVVobDO8cezhVPvwD6EBUN0g3mt.jpg",
+          "genre_ids": [
+              14,
+              28,
+              878,
+              12
+          ],
+          "id": 353491,
+          "original_language": "en",
+          "original_title": "The Dark Tower",
+          "overview": "A boy haunted by visions of a parallel world aids its disillusioned guardian in preventing the destruction of the nexus of universes known as the Dark Tower.",
+          "popularity": 45.27,
+          "poster_path": "/i9GUSgddIqrroubiLsvvMRYyRy0.jpg",
+          "release_date": "2017-08-03",
+          "title": "The Dark Tower",
+          "video": false,
+          "vote_average": 5.7,
+          "vote_count": 4007
+      },
+      {
+          "adult": false,
+          "backdrop_path": "/cKPfiu9IcCW0fMdKdQBXe3PRtTZ.jpg",
+          "genre_ids": [
+              28,
+              80,
+              18,
+              53
+          ],
+          "id": 49026,
+          "original_language": "en",
+          "original_title": "The Dark Knight Rises",
+          "overview": "Following the death of District Attorney Harvey Dent, Batman assumes responsibility for Dent's crimes to protect the late attorney's reputation and is subsequently hunted by the Gotham City Police Department. Eight years later, Batman encounters the mysterious Selina Kyle and the villainous Bane, a new terrorist leader who overwhelms Gotham's finest. The Dark Knight resurfaces to protect a city that has branded him an enemy.",
+          "popularity": 52.666,
+          "poster_path": "/vzvKcPQ4o7TjWeGIn0aGC9FeVNu.jpg",
+          "release_date": "2012-07-16",
+          "title": "The Dark Knight Rises",
+          "video": false,
+          "vote_average": 7.8,
+          "vote_count": 17966
+      },
+      {
+          "adult": false,
+          "backdrop_path": "/zOOdHrPavtInEQh1wv6Rwj3HMnC.jpg",
+          "genre_ids": [
+              878,
+              53,
+              27
+          ],
+          "id": 145135,
+          "original_language": "en",
+          "original_title": "Dark Skies",
+          "overview": "From the producers of Paranormal Activity, Insidious, and Sinister comes Dark Skies: a supernatural thriller that follows a young family living in the suburbs. As husband and wife Daniel and Lacey Barret witness an escalating series of disturbing events involving their family, their safe and peaceful home quickly unravels. When it becomes clear that the Barret family is being targeted by an unimaginably terrifying and deadly force, Daniel and Lacey take matters in their own hands to solve the mystery of what is after their family.",
+          "popularity": 20.601,
+          "poster_path": "/euLgEo2kvuLjYxbfOekWF3l82t6.jpg",
+          "release_date": "2013-02-21",
+          "title": "Dark Skies",
+          "video": false,
+          "vote_average": 6.2,
+          "vote_count": 1363
+      },
+      {
+          "adult": false,
+          "backdrop_path": "/bmAzESah8IUNRQX5MqeyUrhE5Pr.jpg",
+          "genre_ids": [
+              9648,
+              878
+          ],
+          "id": 2666,
+          "original_language": "en",
+          "original_title": "Dark City",
+          "overview": "A man struggles with memories of his past, including a wife he cannot remember, in a nightmarish world with no sun and run by beings with telekinetic powers who seek the souls of humans.",
+          "popularity": 19.473,
+          "poster_path": "/AdBe2ow8hdlT2aLBYuUjs0Xkqkw.jpg",
+          "release_date": "1998-02-27",
+          "title": "Dark City",
+          "video": false,
+          "vote_average": 7.3,
+          "vote_count": 1938
+      },
+      {
+          "adult": false,
+          "backdrop_path": "/kDjR3rP5aa102CvAFlVCAdJFyRV.jpg",
+          "genre_ids": [
+              35,
+              14
+          ],
+          "id": 62213,
+          "original_language": "en",
+          "original_title": "Dark Shadows",
+          "overview": "Vampire Barnabas Collins is inadvertently freed from his tomb and emerges into the very changed world of 1972. He returns to Collinwood Manor to find that his once-grand estate and family have fallen into ruin.",
+          "popularity": 20.968,
+          "poster_path": "/eteQ3gyMpA0oiWcYX4XoXGry0cB.jpg",
+          "release_date": "2012-05-09",
+          "title": "Dark Shadows",
+          "video": false,
+          "vote_average": 6,
+          "vote_count": 5716
+      },
+      {
+          "adult": false,
+          "backdrop_path": "/sDnsobefVmEd7Eh8IoV79bvNcc7.jpg",
+          "genre_ids": [
+              12,
+              16
+          ],
+          "id": 366170,
+          "original_language": "ja",
+          "original_title": "遊☆戯☆王 THE DARK SIDE OF DIMENSIONS",
+          "overview": "Yugi and Kaiba have a special duel that transcends dimensions.",
+          "popularity": 84.417,
+          "poster_path": "/nFQkn1KE0Is3FUW0yPPgdVvCnlo.jpg",
+          "release_date": "2016-04-23",
+          "title": "Yu-Gi-Oh!: The Dark Side of Dimensions",
+          "video": false,
+          "vote_average": 7.5,
+          "vote_count": 223
+      },
+      {
+          "adult": false,
+          "backdrop_path": "/kPjvKnCqIR51Cn6pe1vyWAKO7bW.jpg",
+          "genre_ids": [
+              27,
+              878,
+              53
+          ],
+          "id": 614205,
+          "original_language": "en",
+          "original_title": "Dark Light",
+          "overview": "A woman returns to her family home and discovers it to be inhabited by monsters.",
+          "popularity": 17.369,
+          "poster_path": "/468foMrROMKsaF8HWmQaZ5nhDrR.jpg",
+          "release_date": "2019-08-25",
+          "title": "Dark Light",
+          "video": false,
+          "vote_average": 6.2,
+          "vote_count": 75
+      },
+      {
+          "adult": false,
+          "backdrop_path": "/w8VKCJuzbRRvhxYvGkBqK9HcNwj.jpg",
+          "genre_ids": [
+              53,
+              9648
+          ],
+          "id": 412157,
+          "original_language": "en",
+          "original_title": "A Dark Place",
+          "overview": "When a young boy turns up dead in a sleepy Pennsylvania town, a local sanitation truck driver, Donald, plays detective, embarking on a precarious and obsessive investigation to prove the boy was murdered.",
+          "popularity": 27.246,
+          "poster_path": "/7QqFn9UzuSnh1uOPeSfYL1MFjkB.jpg",
+          "release_date": "2019-04-12",
+          "title": "A Dark Place",
+          "video": false,
+          "vote_average": 5.9,
+          "vote_count": 138
+      },
+      {
+          "adult": false,
+          "backdrop_path": "/sQkRiQo3nLrQYMXZodDjNUJKHZV.jpg",
+          "genre_ids": [
+              16,
+              28,
+              12,
+              14,
+              878
+          ],
+          "id": 618344,
+          "original_language": "en",
+          "original_title": "Justice League Dark: Apokolips War",
+          "overview": "Earth is decimated after intergalactic tyrant Darkseid has devastated the Justice League in a poorly executed war by the DC Super Heroes. Now the remaining bastions of good – the Justice League, Teen Titans, Suicide Squad and assorted others – must regroup, strategize and take the war to Darkseid in order to save the planet and its surviving inhabitants.",
+          "popularity": 48.563,
+          "poster_path": "/c01Y4suApJ1Wic2xLmaq1QYcfoZ.jpg",
+          "release_date": "2020-05-05",
+          "title": "Justice League Dark: Apokolips War",
+          "video": false,
+          "vote_average": 8.4,
+          "vote_count": 998
+      },
+      {
+          "adult": false,
+          "backdrop_path": "/2idkeA6HJ9F7IxeP6zbU4xBU35y.jpg",
+          "genre_ids": [
+              878,
+              28,
+              16,
+              14,
+              53
+          ],
+          "id": 408220,
+          "original_language": "en",
+          "original_title": "Justice League Dark",
+          "overview": "Beings with supernatural powers join together to fight against supernatural villains.",
+          "popularity": 23.073,
+          "poster_path": "/mI3Oxpub6vNQ71FIR2GS4d8XXgj.jpg",
+          "release_date": "2017-01-24",
+          "title": "Justice League Dark",
+          "video": false,
+          "vote_average": 7.3,
+          "vote_count": 737
+      },
+      {
+          "adult": false,
+          "backdrop_path": "/q9tyW0oXdWTTUK6eNFHCKh3gKNH.jpg",
+          "genre_ids": [
+              27
+          ],
+          "id": 11879,
+          "original_language": "en",
+          "original_title": "Near Dark",
+          "overview": "A farm boy reluctantly becomes a member of the undead when a girl he meets turns out to be part of a band of vampires who roam the highways in stolen cars.",
+          "popularity": 15.891,
+          "poster_path": "/bRidarDIzLoBjjGkznjsJkjMRYd.jpg",
+          "release_date": "1987-10-02",
+          "title": "Near Dark",
+          "video": false,
+          "vote_average": 6.9,
+          "vote_count": 419
+      },
+      {
+          "adult": false,
+          "backdrop_path": "/uESKPn0Dyyjhe7RtFuTVb1kkX20.jpg",
+          "genre_ids": [
+              53,
+              9648,
+              18,
+              80
+          ],
+          "id": 182560,
+          "original_language": "en",
+          "original_title": "Dark Places",
+          "overview": "A woman who survived the brutal killing of her family as a child is forced to confront the events of that day.",
+          "popularity": 14.445,
+          "poster_path": "/acJXtT4ZX7nWIhOaCfSAGBxFw71.jpg",
+          "release_date": "2015-04-08",
+          "title": "Dark Places",
+          "video": false,
+          "vote_average": 5.9,
+          "vote_count": 993
+      },
+      {
+          "adult": false,
+          "backdrop_path": "/4ZSlTfkHtgTTupCaLbseXQQzZha.jpg",
+          "genre_ids": [
+              18,
+              53,
+              36
+          ],
+          "id": 552178,
+          "original_language": "en",
+          "original_title": "Dark Waters",
+          "overview": "A tenacious attorney uncovers a dark secret that connects a growing number of unexplained deaths to one of the world's largest corporations. In the process, he risks everything — his future, his family, and his own life — to expose the truth.",
+          "popularity": 14.939,
+          "poster_path": "/bzvzaHqKBSuGIIWhinTQPHvT0zf.jpg",
+          "release_date": "2019-11-22",
+          "title": "Dark Waters",
+          "video": false,
+          "vote_average": 7.5,
+          "vote_count": 1235
+      },
+      {
+          "adult": false,
+          "backdrop_path": "/2Dk9WG8R0PYlgZjo5F9iheKybpO.jpg",
+          "genre_ids": [
+              27,
+              9648,
+              53
+          ],
+          "id": 505058,
+          "original_language": "en",
+          "original_title": "Unfriended: Dark Web",
+          "overview": "​When a 20-something finds a cache of hidden files on his new laptop, he and his friends are unwittingly thrust into the depths of the dark web. They soon discover someone has been watching their every move and will go to unimaginable lengths to protect the dark web.",
+          "popularity": 17.276,
+          "poster_path": "/gnj2opTQWGaLtB7kZ4OuMtG2RWa.jpg",
+          "release_date": "2018-07-19",
+          "title": "Unfriended: Dark Web",
+          "video": false,
+          "vote_average": 6.3,
+          "vote_count": 1019
+      },
+      {
+          "adult": false,
+          "backdrop_path": "/9n7U6sgQMc2NCR5KSZYHtSokcFd.jpg",
+          "genre_ids": [
+              28,
+              27,
+              878,
+              16
+          ],
+          "id": 171823,
+          "original_language": "ja",
+          "original_title": "Blood-C The Last Dark",
+          "overview": "Tokyo, Winter. Despite the use of the Youth Ordinance Bill to enforce curfews for minors and regulate the use of the Internet, young people continue to fight for their own freedom through underground methods. One such group calls themselves Surat. They have decided to take on Fumito Nanahara, a man who has great influence on the political world, and basically controls Tokyo with an iron fist. While using the Internet as a weapon to discover more information about Fumito, they learn about \"Tower\", the secret organization behind Fumito which engages in human experimentation.",
+          "popularity": 17.912,
+          "poster_path": "/sUlxd7SRFr6ou8d5MfL0sj7XpSv.jpg",
+          "release_date": "2012-06-02",
+          "title": "Blood-C The Last Dark",
+          "video": false,
+          "vote_average": 6.7,
+          "vote_count": 48
+      },
+      {
+          "adult": false,
+          "backdrop_path": "/3bC3FyK6rmaebYzoT8qX7EoHgah.jpg",
+          "genre_ids": [
+              27,
+              18,
+              14
+          ],
+          "id": 463322,
+          "original_language": "en",
+          "original_title": "The Dark",
+          "overview": "A murderous, flesh-eating undead young girl haunting the remote stretch of woods where she was murdered decades earlier, discovers a kidnapped and abused boy hiding in the trunk of one of her victim’s cars. Her decision to let the boy live throws her aggressively solitary existence into upheaval, and ultimately forces her to re-examine just how much of her humanity her murderer was able to destroy.",
+          "popularity": 11.281,
+          "poster_path": "/uPUJsR3UJ6AUOKxx0d6dOlLHln4.jpg",
+          "release_date": "2018-10-12",
+          "title": "The Dark",
+          "video": false,
+          "vote_average": 6.2,
+          "vote_count": 128
+      }
+  ],
+  "total_pages": 122,
+  "total_results": 2426
+}
