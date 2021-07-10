@@ -7,6 +7,5 @@
 <%= form_with url: movies_path, method: :get, local: true do |f| %>
   <%= f.label :search, "Search by movie title: " %>
   <%= f.text_field :search %>
-
   <%= f.submit 'Find Movies' %>
 <% end %>
