@@ -6,8 +6,11 @@ class MoviesController < ApplicationController
       url: 'https://api.themoviedb.org',
       params: { api_key: ENV['movie_db_api'] }
     )
-    response = conn.get("/3/search/movie?&query=#{params[:search]}")
-    movies = JSON.parse(response.body, symbolize_name: true)
+    response1 = conn.get("/3/search/movie?&query=#{params[:search]}&page=1")
+    response2 = conn.get("/3/search/movie?&query=#{params[:search]}&page=2")
+    parsed1 = JSON.parse(response1.body, symbolize_names: true)
+    parsed2 = JSON.parse(response2.body, symbolize_names: true)
+    @results = parsed1[:results] + parsed2[:results]
   end
 
   def show; end
