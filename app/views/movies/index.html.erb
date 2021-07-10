@@ -1,8 +1,9 @@
+<p><%= button_to "Find Top Rated Movies", movies_path %></p><br>
 
-
-
-<% @movies.each do |movie| %>
-    <ol>
-      <%= movie[:title] %>, <%= movie[:vote_average] %>
-    </ol>
-<% end %>
+<div class=search_results>
+  <% @results.each do |result| %>
+    <ul>
+      <li><%= link_to "#{result[:title]}" %> Vote Average: <%= result[:vote_average] %></li>
+    </ul>
+  <% end %>
+</div>

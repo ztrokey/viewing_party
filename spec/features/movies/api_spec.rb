@@ -1,15 +1,23 @@
 require 'rails_helper'
 
-RSpec.describe 'Get movie info from api' do
+RSpec.describe 'test movie search' do
   before :each do
-    @current_user = User.create(user_name: "Vicki Vallencourt", email: 'highqualityh2o@ex.com', password: 'pickles')
-    allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(@current_user)
-
-    visit movies_path
+    user = User.create(user_name: 'tester', email: 'test@test.com', password: 'password1')
+    allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(user)
   end
+  it 'search results', :vcr do
+    visit discover_path
 
-  it 'get top rated movies' do
-    expect(page).to have_content('Dilwale Dulhania Le Jayenge')
-    expect(page).to have_content(8.7)
+    fill_in :search, with: 'Dark'
+    click_button 'Find Movies'
+
+    expect(current_path).to eq(movies_path)
+    expect(page.status_code).to eq(200)
+    within('.search_results') do
+      expect(page.all('ul', count: 40))
+    end
+    expect(page).to have_link('Dark Phoenix')
+    expect(page).to have_content('Vote Average: 6.1')
+    expect(page).to have_button('Find Top Rated Movies')
   end
 end
