@@ -1,6 +1,9 @@
 <h3>Welcome <%= "#{current_user.user_name}" %>!</h3>
 
-<p><%= button_to "Find Top Rated Movies", movies_path %></p>
+
+<p><%= button_to "Find Top Rated Movies", movies_path, method: :get %></p>
+
+
 <%= form_with url: movies_path, method: :get, local: true do |f| %>
   <%= f.label :search, "Search by movie title: " %>
   <%= f.text_field :search %>
