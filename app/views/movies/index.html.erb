@@ -9,10 +9,10 @@
   <% end %><br>
 
   <div class="top-rated-movies">
-    <% @movies.each do |movie| %>
+    <% @top_rated_movies.each do |movie| %>
         <ol>
           # need to pass movie ID when you add path to link
-          <%= link_to "#{movie[:title]}" %>, <%= movie[:vote_average] %>
+          <%= link_to "#{movie.title}" %>, <%= movie.vote_average %>
         </ol>
     <% end %>
   </div>
@@ -22,9 +22,9 @@
   <p><%= button_to "Find Top Rated Movies", movies_path %></p><br>
 
   <div class=search_results>
-    <% @results.each do |result| %>
+    <% @search_result_movies.each do |result| %>
       <ul>
-        <li><%= link_to "#{result[:title]}" %> Vote Average: <%= result[:vote_average] %></li>
+        <li><%= link_to "#{result.title}" %>, <%= result.vote_average %></li>
       </ul>
     <% end %>
   </div>
