@@ -1,17 +1,7 @@
 class MoviesController < ApplicationController
     def index
-      if !params[:search]
-        conn = Faraday.new(
-        url: "https://api.themoviedb.org",
-        params: { api_key: ENV['movie_db_api'] })
-        page1 = conn.get('/3/movie/top_rated?&page=1')
-        page2 = conn.get('/3/movie/top_rated?&page=2')
+      if params[:search]
 
-        parsed1 = JSON.parse(page1.body, symbolize_names: true)
-        parsed2 = JSON.parse(page2.body, symbolize_names: true)
-
-        @movies = parsed1[:results] + parsed2[:results]
-      elsif params[:search] 
         conn = Faraday.new(
         url: "https://api.themoviedb.org",
         params: { api_key: ENV['movie_db_api'] })
@@ -21,6 +11,8 @@ class MoviesController < ApplicationController
         parsed_searched2 = JSON.parse(response_searched2.body, symbolize_names: true)
         # require 'pry'; binding.pry
         @results = parsed_searched1[:results] + parsed_searched2[:results]
+
+        movie = @results.find { |r|  }
       end
     end
 
