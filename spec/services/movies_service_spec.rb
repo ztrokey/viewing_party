@@ -11,9 +11,15 @@ RSpec.describe MoviesService do
     expect(data.count).to eq(40)
   end
 
-  # it 'returns movie searched', :vcr do
-  #
-  # end
+  it 'returns movie searched', :vcr do
+    data = MoviesService.get_search_results('Dark')
+
+    expect(data).to be_an(Array)
+    expect(data[0]).to be_a(Hash)
+    expect(data[0]).to have_key(:title)
+    expect(data[0][:title]).to be_a(String)
+    expect(data.count).to eq(40)
+  end
 
   it 'returns movie data correctly', :vcr do
     data = MoviesService.get_movie_details(278)
