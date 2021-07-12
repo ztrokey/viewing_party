@@ -2,68 +2,17 @@ require 'rails_helper'
 
 RSpec.describe Movie do
   it 'it should build a Movie PORO' do
-    null = nil
-    data = {
-    "adult": false,
-    "backdrop_path": "/iNh3BivHyg5sQRPP1KOkzguEX0H.jpg",
-    "belongs_to_collection": null,
-    "budget": 25000000,
-    "genres": [
-        {
-            "id": 18,
-            "name": "Drama"
-        },
-        {
-            "id": 80,
-            "name": "Crime"
-        }
-    ],
-    "homepage": "",
-    "id": 278,
-    "imdb_id": "tt0111161",
-    "original_language": "en",
-    "original_title": "The Shawshank Redemption",
-    "overview": "Framed in the 1940s for the double murder of his wife and her lover, upstanding banker Andy Dufresne begins a new life at the Shawshank prison, where he puts his accounting skills to work for an amoral warden. During his long stretch in prison, Dufresne comes to be admired by the other inmates -- including an older prisoner named Red -- for his integrity and unquenchable sense of hope.",
-    "popularity": 43.649,
-    "poster_path": "/q6y0Go1tsGEsmtFryDOJo3dEmqu.jpg",
-    "production_companies": [
-        {
-            "id": 97,
-            "logo_path": "/7znWcbDd4PcJzJUlJxYqAlPPykp.png",
-            "name": "Castle Rock Entertainment",
-            "origin_country": "US"
-        }
-    ],
-    "production_countries": [
-        {
-            "iso_3166_1": "US",
-            "name": "United States of America"
-        }
-    ],
-    "release_date": "1994-09-23",
-    "revenue": 28341469,
-    "runtime": 142,
-    "spoken_languages": [
-        {
-            "english_name": "English",
-            "iso_639_1": "en",
-            "name": "English"
-        }
-    ],
-    "status": "Released",
-    "tagline": "Fear can hold you prisoner. Hope can set you free.",
-    "title": "The Shawshank Redemption",
-    "video": false,
-    "vote_average": 8.7,
-    "vote_count": 19209
-}
+    movie = Movie.new(movie_data, cast_data, reviews_data)
 
-    movie = Movie.new(data)
     expect(movie.id).to eq(278)
     expect(movie.title).to eq("The Shawshank Redemption")
     expect(movie.vote_average).to eq(8.7)
     expect(movie.runtime).to eq(142)
-    expect(movie.genres).to eq(["Drama", "Crime"])
+    expect(movie.genres).to eq("Drama, Crime")
     expect(movie.summary).to eq("Framed in the 1940s for the double murder of his wife and her lover, upstanding banker Andy Dufresne begins a new life at the Shawshank prison, where he puts his accounting skills to work for an amoral warden. During his long stretch in prison, Dufresne comes to be admired by the other inmates -- including an older prisoner named Red -- for his integrity and unquenchable sense of hope.")
+    expect(movie.cast[1][:character]).to eq("Ellis Boyd \"Red\" Redding")
+    expect(movie.cast[1][:name]).to eq("Morgan Freeman")
+    expect(movie.reviews[1][:author]).to eq("John Chard")
+    expect(movie.reviews[1][:content]).to eq("Some birds aren't meant to be caged.\r\n\r\nThe Shawshank Redemption is written and directed by Frank Darabont. It is an adaptation of the Stephen King novella Rita Hayworth and Shawshank Redemption. Starring Tim Robbins and Morgan Freeman, the film portrays the story of Andy Dufresne (Robbins), a banker who is sentenced to two life sentences at Shawshank State Prison for apparently murdering his wife and her lover. Andy finds it tough going but finds solace in the friendship he forms with fellow inmate Ellis \"Red\" Redding (Freeman). While things start to pick up when the warden finds Andy a prison job more befitting his talents as a banker. However, the arrival of another inmate is going to vastly change things for all of them.\r\n\r\nThere was no fanfare or bunting put out for the release of the film back in 94, with a title that didn't give much inkling to anyone about what it was about, and with Columbia Pictures unsure how to market it, Shawshank Redemption barely registered at the box office. However, come Academy Award time the film received several nominations, and although it won none, it stirred up interest in the film for its home entertainment release. The rest, as they say, is history. For the film finally found an audience that saw the film propelled to almost mythical proportions as an endearing modern day classic. Something that has delighted its fans, whilst simultaneously baffling its detractors. One thing is for sure, though, is that which ever side of the Shawshank fence you sit on, the film continues to gather new fans and simply will never go away or loose that mythical status.\r\n\r\nIt's possibly the simplicity of it all that sends some haters of the film into cinematic spasms. The implausible plot and an apparent sentimental edge that makes a nonsense of prison life, are but two chief complaints from those that dislike the film with a passion. Yet when characters are this richly drawn, and so movingly performed, it strikes me as churlish to do down a human drama that's dealing in hope, friendship and faith. The sentimental aspect is indeed there, but that acts as a counterpoint to the suffering, degradation and shattering of the soul involving our protagonist. Cosy prison life you say? No chance. The need for human connection is never more needed than during incarceration, surely? And given the quite terrific performances of Robbins (never better) & Freeman (sublimely making it easy), it's the easiest thing in the world to warm to Andy and Red.\r\n\r\nThose in support aren't faring too bad either. Bob Gunton is coiled spring smarm as Warden Norton, James Whitmore is heart achingly great as the \"Birdman Of Shawshank,\" Clancy Brown is menacing as antagonist Capt. Byron Hadley, William Sadler amusing as Heywood & Mark Rolston is impressively vile as Bogs Diamond. Then there's Roger Deakins' lush cinematography as the camera gracefully glides in and out of the prison offering almost ethereal hope to our characters (yes, they are ours). The music pings in conjunction with the emotional flow of the movie too. Thomas Newman's score is mostly piano based, dovetailing neatly with Andy's state of mind, while the excellently selected soundtrack ranges from the likes of Hank Williams to the gorgeous Le Nozze di Figaro by Mozart.\r\n\r\nIf you love Shawshank then it's a love that lasts a lifetime. Every viewing brings the same array of emotions - anger - revilement - happiness - sadness - inspiration and a warmth that can reduce the most hardened into misty eyed wonderment. Above all else, though, Shawshank offers hope - not just for characters in a movie - but for a better life and a better world for all of us. 10/10")
   end
 end

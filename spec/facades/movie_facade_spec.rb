@@ -19,7 +19,7 @@ RSpec.describe 'MovieFacade' do
     end
   end
 
-  it 'gets the movies details' do
+  it 'returns movie with details' do
     VCR.use_cassette('returns movie data correctly') do
       facade = MoviesFacade.get_movie_details(278)
 
@@ -28,21 +28,21 @@ RSpec.describe 'MovieFacade' do
     end
   end
 
-  xit 'gets the movie cast' do
+  it 'returns movie with credit information' do
     VCR.use_cassette('returns movie cast data correctly') do
-      facade = MoviesFacade.get_movie_cast(278)
+      facade = MoviesFacade.get_movie_credits(278)
 
-      expect(facade).to be_an()
-      expect(facade[0]).to be_a()
+      expect(facade).to be_a(Movie)
+      expect(facade.title).to eq('The Shawshank Redemption')
     end
   end
 
-  xit 'returns' do
+  it 'returns movie with review information' do
     VCR.use_cassette('returns movie reviews data correctly') do
-      facade = MoviesFacade.get_movie_reviews(movie_id)
+      facade = MoviesFacade.get_movie_reviews(278)
 
-      expect(facade).to be_an()
-      expect(facade[0]).to be_a()
+      expect(facade).to be_a(Movie)
+      expect(facade.title).to eq('The Shawshank Redemption')
     end
   end
 end
