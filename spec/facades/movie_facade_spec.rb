@@ -28,7 +28,7 @@ RSpec.describe 'MovieFacade' do
     end
   end
 
-  it 'returns movie with reviews' do
+  it 'returns movie with credit information' do
     VCR.use_cassette('returns movie cast data correctly') do
       facade = MoviesFacade.get_movie_credits(278)
 
@@ -37,7 +37,7 @@ RSpec.describe 'MovieFacade' do
     end
   end
 
-  it 'gets the movie review information' do
+  it 'returns movie with review information' do
     VCR.use_cassette('returns movie reviews data correctly') do
       facade = MoviesFacade.get_movie_reviews(278)
 
