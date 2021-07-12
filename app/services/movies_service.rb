@@ -34,7 +34,7 @@ class MoviesService
     private
 
     def conn
-      conn = Faraday.new(
+      Faraday.new(
       url: "https://api.themoviedb.org",
       params: {
         api_key: ENV['movie_db_api'],
