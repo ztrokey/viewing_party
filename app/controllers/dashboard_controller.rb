@@ -5,7 +5,7 @@ class DashboardController < ApplicationController
   def create
     friend = User.find_by(email: params[:friends])
     if friend
-      @current_user.friends << friend
+      current_user.friends << friend
     else
       flash[:alert] = 'Please enter a vaild email address'
     end
