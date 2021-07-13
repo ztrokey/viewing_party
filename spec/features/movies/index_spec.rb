@@ -42,27 +42,3 @@ RSpec.describe 'Movies Index Page' do
     end
   end
 end
-
-# look into implemeneting the below test code?
-
-# before {get '/api/v1/questions'}
-#
-# it 'returns all questions' do
-#     expect(JSON.parse(response.body).size).to eq(20)
-#   end
-#
-# it 'returns status code 200' do
-#     expect(response).to have_http_status(:success)
-# end
-
-# RSpec.describe 'Users', type: :request do
-#   describe 'post users/' do
-#     subject { post '/users' }
-#
-#     it 'returns success' do
-#       subject
-#
-#       expect(response).to have_http_status(200)
-#     end
-#   end
-# end

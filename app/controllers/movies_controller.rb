@@ -1,4 +1,6 @@
 class MoviesController < ApplicationController
+  before_action :authenticate_user
+
   def index
     if !params[:search]
       @top_rated_movies = MoviesFacade.top_rated_movies
@@ -8,6 +10,6 @@ class MoviesController < ApplicationController
   end
 
   def show
-    @movie = MoviesFacade.get_movie_details(params[:movie_id])
+    @movie = MoviesFacade.get_movie_details(params[:id])
   end
 end

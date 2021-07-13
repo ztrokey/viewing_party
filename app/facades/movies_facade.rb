@@ -42,6 +42,3 @@ class MoviesFacade
     end
   end
 end
-
-
-# need to add cast and reviews either to Movies PORO or create new PORO's

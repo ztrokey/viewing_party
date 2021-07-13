@@ -12,4 +12,5 @@ Rails.application.routes.draw do
 
   resources :movies, only: [:index, :show]
   resources :dashboard, only: [:index, :create]
+  resources :parties, only: [:new, :create]
 end
