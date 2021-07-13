@@ -38,39 +38,27 @@ RSpec.describe 'dashboard index page' do
     expect(page).to have_content("Your Viewing Parties")
   end
   it 'has a section to add friends' do
-    visit root_path
-
     user1 = User.create(user_name: 'test1', email: 'test1@example.com', password: 'sploot')
     user2 = User.create(user_name: 'test2', email: 'test2@example.com', password: 'password123')
     user3 = User.create(user_name: 'test3', email: 'test3@example.com', password: '123password')
 
-    click_button 'Log in'
+    allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(user1)
 
-    fill_in :user_name, with: 'test1'
-    fill_in :email, with: 'test1@example.com'
-    fill_in :password, with: 'sploot'
-
-    click_button 'Log in'
+    visit dashboard_index_path
 
     within('#friends') do
       expect(page).to have_content('You currently have no friends')
       expect(page).to have_button('Add Friend')
     end
   end
-  it 'can add a friend' do
-    visit root_path
-
+  it 'can add a friend if their email exists' do
     user1 = User.create(user_name: 'test1', email: 'test1@example.com', password: 'sploot')
     user2 = User.create(user_name: 'test2', email: 'test2@example.com', password: 'password123')
     user3 = User.create(user_name: 'test3', email: 'test3@example.com', password: '123password')
 
-    click_button 'Log in'
+    allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(user1)
 
-    fill_in :user_name, with: 'test1'
-    fill_in :email, with: 'test1@example.com'
-    fill_in :password, with: 'sploot'
-
-    click_button 'Log in'
+    visit dashboard_index_path
 
     within('#friends') do
       fill_in "friends",	with: "#{user2.email}"
