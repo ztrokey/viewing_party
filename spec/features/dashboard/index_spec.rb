@@ -77,4 +77,37 @@ RSpec.describe 'dashboard index page' do
     end
     expect(page).to have_content('Please enter a vaild email address')
   end
+
+  # describe 'should have a section for viewing parties' do
+  #
+  #   it "should have a section parties the current user is hosting" do
+  #     current_user = User.create(user_name: "Vicki Vallencourt", email: 'highqualityh2o@ex.com', password: 'pickles')
+  #     allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(current_user)
+  #     movie = MoviesFacade.get_movie_details(278)
+  #     friend1 = User.create(user_name: 'Chris P Bacon', email: 'baconator@example.com', password: 'password123')
+  #     friend2 = User.create(user_name: 'Anita Nappe', email: 'sleepy1@example.com', password: '123password')
+  #     current_user.friends.push(friend1, friend2)
+  #
+  #     visit dashboard_index_path
+  #
+  #     expect(current_path).to eq(dashboard_index_path)
+  #
+  #     expect(page).to have_content()
+  #   end
+  #
+  #   it "should have a section parties the current user is invited to" do
+  #     current_user = User.create(user_name: "Vicki Vallencourt", email: 'highqualityh2o@ex.com', password: 'pickles')
+  #     allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(current_user)
+  #     movie = MoviesFacade.get_movie_details(278)
+  #     friend1 = User.create(user_name: 'Chris P Bacon', email: 'baconator@example.com', password: 'password123')
+  #     friend2 = User.create(user_name: 'Anita Nappe', email: 'sleepy1@example.com', password: '123password')
+  #     current_user.friends.push(friend1, friend2)
+  #
+  #     visit dashboard_index_path
+  #
+  #     expect(current_path).to eq(dashboard_index_path)
+  #
+  #     expect(page).to have_content()
+  #   end
+  # end
 end
