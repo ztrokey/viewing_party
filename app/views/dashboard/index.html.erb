@@ -1,16 +1,29 @@
-<h1>Welcome <%= @current_user.user_name %>!</h1>
+<h1>Welcome <%= current_user.user_name %>!</h1>
 
 <%= button_to 'Discover Movies', discover_path %>
 
 <section id=friends>
   <div>Friends:
-    <ul>
-      <% @current_user.friends.each do |friend| %>
-        <li><%= friend.user_name %></li>
-      <% end %>
-    </ul>
+    <br>
+    <% if current_user.friends.length == 0 %>
+      <%= 'You currently have no friends' %>
+    <% else %>
+      <ul>
+        <% current_user.friends.each do |friend| %>
+          <li><%= friend.user_name %></li>
+        <% end %>
+      </ul>
+    <% end %>
+  </div>
+  <div>
+    <%= form_with url: dashboard_index_path, method: :post, local: true do |f| %>
+      <%= f.label :friends, "Friend's Email Address" %>
+      <%= f.text_field :friends %>
+      <%= f.submit 'Add Friend' %>
+    <% end %>
   </div>
 </section>
+<br>
 
 <section id=parties>
   <div>Your Viewing Parties:</div>
