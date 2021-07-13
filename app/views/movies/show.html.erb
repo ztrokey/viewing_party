@@ -1,0 +1,30 @@
+<h3>Welcome <%= "#{current_user.user_name}" %>!</h3>
+
+<p><%= button_to 'Create a viewing party', new_party_path %></p><br>
+
+<h2><%= @movie.title %></h2>
+
+<p><%= @movie.vote_average %></p>
+<p><%= formatted_time(@movie.runtime) %></p>
+<p><%= @movie.genres %></p>
+<p>-------------------------------------------------------</p>
+<p><%= @movie.summary %></p>
+
+<div class="movie-cast">
+  <% @movie.cast.each do |actor| %>
+    <ul>
+      <p><%= actor[:name] %> as <%= actor[:character] %></p>
+    </ul>
+  <% end %>
+</div>
+<p>-------------------------------------------------------</p>
+<h4><%= @movie.reviews.count %> Reviews</h4>
+
+<div class="movie-reviews">
+  <% @movie.reviews.each do |review| %>
+    <ul>
+      <p><%= review[:author] %></p>
+      <p><%= review[:content] %></p>
+    </ul>
+  <% end %>
+</div>
