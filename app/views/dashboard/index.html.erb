@@ -1,6 +1,21 @@
-<h1>Welcome <%= current_user.user_name %>!</h1>
+<ul class="nav nav-pills">
+  <li class="nav-item">
+    <a class="nav-link active" aria-current="page" href="#">Active</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#"><%= link_to 'Log out', '/logout', method: :delete %></a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#"><%= button_to 'Discover Movies', discover_path, method: :get %></a>
+  </li>
+  <li class="nav-item">
+    <h1>Welcome <%= current_user.user_name %>!</h1>
+  </li>
+</ul>
 
-<%= button_to 'Discover Movies', discover_path, method: :get %><br>
+
+
+
 
 <section id="friends">
   <div>Friends:
@@ -65,5 +80,3 @@
   <% end %>
   </div>
 </section>
-
-<p><%= link_to 'Log out', '/logout', method: :delete %></p>
