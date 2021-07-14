@@ -16,6 +16,6 @@ RSpec.describe 'Welcome Page' do
     expect(current_path).to eq(root_path)
 
     expect(page).to have_link('Register', href: register_path )
-    expect(page).to have_link('Log in', href: login_path )
+    expect(page).to have_button('Log in')
   end
 end
