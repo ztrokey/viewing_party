@@ -11,7 +11,6 @@
   <div class="top-rated-movies">
     <% @top_rated_movies.each do |movie| %>
         <ol>
-          # need to pass movie ID when you add path to link
           <%= link_to "#{movie.title}", movie_path(movie.id) %>, <%= movie.vote_average %>
         </ol>
     <% end %>
