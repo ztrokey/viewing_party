@@ -2,7 +2,7 @@
 
 <%= button_to 'Discover Movies', discover_path %>
 
-<section id=friends>
+<section id="friends">
   <div>Friends:
     <br>
     <% if current_user.friends.length == 0 %>
@@ -25,6 +25,44 @@
 </section>
 <br>
 
-<section id=parties>
-  <div>Your Viewing Parties:</div>
+<section id="parties">
+  <div class="viewing-parties">
+    <h4>Your Viewing Parties: </h4>
+
+    <% current_user.parties.each do |party| %>
+  <% if party.host_id == current_user.id %>
+      <p><%= link_to "#{party.movie_title}", movie_path(party.movie_id) %></p>
+      <p><%= party.start_date.strftime('%B %e, %Y') %></p>
+      <p><%= party.start_time.strftime('%I:%M %p') %></p>
+      <p>Hosting</p>
+      <p>Friends also watching: </p><br>
+      <% party.viewers.each do |viewer| %>
+        <p><%= viewer.user.user_name %></p>
+      <% end %>
+    <% end %>
+  <% end %>
+
+    <% current_user.parties.each do |party| %>
+  <% if !party.host_id == current_user.id %>
+      <p><%= link_to "#{party.movie_title}", movie_path(party.movie_id) %></p>
+      <p><%= party.start_date.strftime('%B %e, %Y') %></p>
+      <p><%= party.start_time.strftime('%I:%M %p') %></p>
+      <p>Invited</p>
+      <p>Friends also watching: </p><br>
+      <% party.viewers.each do |viewer| %>
+        <p><%= viewer.user.user_name %></p>
+      <% end %>
+    <% end %>
+  <% end %>
+  </div>
 </section>
+
+
+
+
+
+
+
+
+
+<!-- c -->
