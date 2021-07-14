@@ -8,7 +8,7 @@ RSpec.describe Movie do
     expect(movie.title).to eq("The Shawshank Redemption")
     expect(movie.vote_average).to eq(8.7)
     expect(movie.runtime).to eq(142)
-    expect(movie.genres).to eq("Drama, Crime")
+    expect(movie.format_genres).to eq("Drama, Crime")
     expect(movie.summary).to eq("Framed in the 1940s for the double murder of his wife and her lover, upstanding banker Andy Dufresne begins a new life at the Shawshank prison, where he puts his accounting skills to work for an amoral warden. During his long stretch in prison, Dufresne comes to be admired by the other inmates -- including an older prisoner named Red -- for his integrity and unquenchable sense of hope.")
     expect(movie.cast[1][:character]).to eq("Ellis Boyd \"Red\" Redding")
     expect(movie.cast[1][:name]).to eq("Morgan Freeman")
