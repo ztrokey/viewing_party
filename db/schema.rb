@@ -26,7 +26,11 @@ ActiveRecord::Schema.define(version: 2021_07_07_000924) do
 
   create_table "parties", force: :cascade do |t|
     t.bigint "host_id"
-    t.integer "movie_api"
+    t.string "movie_title"
+    t.date "start_date"
+    t.time "start_time"
+    t.integer "length"
+    t.integer "movie_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["host_id"], name: "index_parties_on_host_id"
