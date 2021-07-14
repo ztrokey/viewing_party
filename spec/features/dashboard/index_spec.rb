@@ -18,7 +18,7 @@ RSpec.describe 'dashboard index page' do
     user1.friends << user2
     user1.friends << user3
 
-    click_button 'Log in'
+    click_on 'Log in'
 
     expect(current_path).to eq('/login')
 
@@ -26,7 +26,7 @@ RSpec.describe 'dashboard index page' do
     fill_in :email, with: 'spinthat.wheel@example.com'
     fill_in :password, with: 'sploot'
 
-    click_button 'Log in'
+    click_on 'Log in'
 
     expect(current_path).to eq(dashboard_index_path)
     expect(page).to have_content("Welcome #{user1.user_name}!")
