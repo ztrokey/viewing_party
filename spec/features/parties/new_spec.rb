@@ -30,24 +30,27 @@ RSpec.describe 'Parties New Page' do
       expect(page).to have_field('sleepy1@example.com')
     end
 
-    it 'can create viewing party' do
+    it 'can create a viewing party' do
       expect(current_path).to eq(new_party_path)
-
-
 
       fill_in 'length', with: @movie.runtime
       fill_in 'start_date', with: Time.now
-      fill_in 'start_time', with: Time.now + 30
+      fill_in 'start_time', with: '18:09:00'
       check @friend1.email
+      check @friend2.email
 
       click_button 'Create Party'
 
       expect(current_path).to eq(dashboard_index_path)
 
-      expect(page).to have_content(@movie.title)
-      expect(page).to have_content(params[:start_date])
-      expect(page).to have_content(params[:start_time])
-      expect(page).to have_content(@friend1.email)
+      within('.viewing-parties') do
+        expect(page).to have_content(@movie.title)
+        expect(page).to have_content(Time.now.strftime('%B %e, %Y'))
+        expect(page).to have_content('06:09 PM')
+        expect(page).to have_content('Hosting')
+        expect(page).to have_content(@friend1.user_name)
+        expect(page).to have_content(@friend2.user_name)
+      end
     end
   end
 end
