@@ -1,6 +1,4 @@
 class MoviesController < ApplicationController
-  before_action :authenticate_user
-
   def index
     if !params[:search]
       @top_rated_movies = MoviesFacade.top_rated_movies
