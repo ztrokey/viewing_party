@@ -1,6 +1,6 @@
 <h1>Welcome <%= current_user.user_name %>!</h1>
 
-<%= button_to 'Discover Movies', discover_path %>
+<%= button_to 'Discover Movies', discover_path, method: :get %><br>
 
 <section id="friends">
   <div>Friends:
@@ -14,7 +14,7 @@
         <% end %>
       </ul>
     <% end %>
-  </div>
+  </div><br>
   <div>
     <%= form_with url: dashboard_index_path, method: :post, local: true do |f| %>
       <%= f.label :friends, "Friend's Email Address" %>
@@ -27,7 +27,9 @@
 
 <section id="parties">
   <div class="viewing-parties">
-    <h4>Your Viewing Parties: </h4>
+    <h3>Your Viewing Parties: </h3>
+
+    <h4>Parties you're hosting</h4>
 
     <% current_user.parties.each do |party| %>
   <% if party.host_id == current_user.id %>
@@ -35,34 +37,33 @@
       <p><%= party.start_date.strftime('%B %e, %Y') %></p>
       <p><%= party.start_time.strftime('%I:%M %p') %></p>
       <p>Hosting</p>
-      <p>Friends also watching: </p><br>
+      <p>Friends also watching: </p>
       <% party.viewers.each do |viewer| %>
-        <p><%= viewer.user.user_name %></p>
+        <ul>
+          <p><%= viewer.user.user_name %></p>
+        </ul>
       <% end %>
     <% end %>
   <% end %>
+  <p>------------------------------------------------</p>
+  <h4>Parties you're invited to</h4>
 
-    <% current_user.parties.each do |party| %>
-  <% if !party.host_id == current_user.id %>
-      <p><%= link_to "#{party.movie_title}", movie_path(party.movie_id) %></p>
-      <p><%= party.start_date.strftime('%B %e, %Y') %></p>
-      <p><%= party.start_time.strftime('%I:%M %p') %></p>
+  <% if current_user.viewers != nil %>
+    <% current_user.viewers.each do |viewer| %>
+      <p><%= link_to "#{viewer.party.movie_title}", movie_path(viewer.party.movie_id) %></p>
+      <p><%= viewer.party.start_date.strftime('%B %e, %Y') %></p>
+      <p><%= viewer.party.start_time.strftime('%I:%M %p') %></p>
       <p>Invited</p>
-      <p>Friends also watching: </p><br>
-      <% party.viewers.each do |viewer| %>
-        <p><%= viewer.user.user_name %></p>
+      <p>Hosted by <%= viewer.party.host.user_name %></p>
+      <p>People watching: </p>
+      <p><% viewer.party.viewers.each do |viewer| %></p>
+        <ul>
+          <p><%= viewer.user.user_name %></p>
+        </ul>
       <% end %>
     <% end %>
   <% end %>
   </div>
 </section>
 
-
-
-
-
-
-
-
-
-<!-- c -->
+<p><%= link_to 'Log out', '/logout' %></p>
