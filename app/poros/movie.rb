@@ -15,11 +15,11 @@ class Movie
     @runtime = movie_info[:runtime]
     @genres = movie_info[:genres]
     @summary = movie_info[:overview]
-    @cast  = cast_info[:cast][0..9]
-    @reviews  = review_info[:results]
+    @cast = cast_info[:cast][0..9]
+    @reviews = review_info[:results]
   end
 
-  def genres
+  def format_genres
     @genres.map { |genre| genre[:name] }.join(', ')
   end
 end
