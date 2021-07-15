@@ -3,6 +3,7 @@ require 'rails_helper'
 RSpec.describe Movie do
   it 'it should build a Movie PORO' do
     movie = Movie.new(movie_data, cast_data, reviews_data)
+    
 
     expect(movie.id).to eq(278)
     expect(movie.title).to eq("The Shawshank Redemption")
