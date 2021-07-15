@@ -5,15 +5,11 @@ class PartiesController < ApplicationController
   def create
     @party = current_user.parties.new(party_params)
     params[:friends].delete_at(0)
-    if @party.save
-      params[:friends].each do |friend|
-        Viewer.create!(party_id: @party.id, user: User.find(friend.to_i))
-      end
-      redirect_to dashboard_index_path
-    else
-      flash[:error] = 'Your party was not created, please try again.'
-      render :new
+    @party.save
+    params[:friends].each do |friend|
+      Viewer.create!(party_id: @party.id, user: User.find(friend.to_i))
     end
+    redirect_to dashboard_index_path
   end
 
   private
