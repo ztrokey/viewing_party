@@ -2,7 +2,7 @@
 
 <p><%= button_to 'Create a viewing party', new_party_path, method: :get, params: { movie_id: @movie.id } %>
 
-<h2><%= @movie.title %></h2>
+<h2><% @movie.title %></h2>
 
 <p><%= @movie.vote_average %></p>
 <p><%= formatted_time(@movie.runtime) %></p>
